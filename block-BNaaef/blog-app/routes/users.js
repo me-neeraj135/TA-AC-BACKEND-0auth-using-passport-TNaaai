@@ -26,7 +26,7 @@ router.get(`/register`, (req, res, next) => {
 // login-form
 
 router.get(`/login`, (req, res, next) => {
-  let msg = req.flash(`msg`)[0];
+  let msg = req.flash(`error`)[0];
   return res.render(`login`, { msg });
 });
 
